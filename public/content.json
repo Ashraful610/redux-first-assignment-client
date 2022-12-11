@@ -1,6 +1,6 @@
 [
     {
-        "_id":1,
+        
         "name":"Ashraful Alam",
         "img":"https://i.ibb.co/S70t1x4/background-img-2.jpg",
         "details":{
@@ -9,7 +9,7 @@
         }
     },
     {
-        "_id":2,
+        
         "name": "Sharuk Khan",
         "img":"https://i.ibb.co/kKLDT2k/uwp2198869.webp",
         "details":{
@@ -18,7 +18,7 @@
         }
     },
     {
-        "_id":3,
+        
         "name": "Salman Khan",
         "img":"https://i.ibb.co/93wbn4n/Marmotamaps-Wallpaper-Inntal-Desktop-1920x1080.jpg",
         "details":{
@@ -27,7 +27,7 @@
         }
     },
     {
-        "_id":4,
+        
         "name": "Mustafizur Rhman",
         "img":"https://i.ibb.co/Z6fmPyK/wallpapersden-com-street-4k-black-and-white-photography-1920x1080.jpg",
         "details":{
@@ -36,7 +36,7 @@
         }
     },
     {
-        "_id":5,
+        
         "name":"Khalid Farhan",
         "img":"https://i.ibb.co/n7FCKkD/wallpapersden-com-76963-1920x1080.jpg",
         "details":{
@@ -45,7 +45,7 @@
         }
     },
     {
-        "_id":6,
+        
         "name":"Rejaul Karim",
         "img":"https://i.ibb.co/5jDJrGf/after-dark-68-1920x1080.jpg",
         "details":{
@@ -54,7 +54,7 @@
         }
     },
     {
-        "_id":7,
+        
         "name":"Amir Khan",
         "img":"https://i.ibb.co/LYwHbQt/wallpaper.jpg",
         "details":{

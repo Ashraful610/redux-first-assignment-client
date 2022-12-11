@@ -5,7 +5,7 @@ const Contents = () => {
     const [contents , setContents]  = useState([])
 
     useEffect(() => {
-        fetch('content.json')
+        fetch('http://localhost:5000/contents')
         .then(res => res.json())
         .then(contents => setContents(contents))
     },[])

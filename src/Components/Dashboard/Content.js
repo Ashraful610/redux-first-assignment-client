@@ -1,6 +1,19 @@
 import React from 'react';
 
 const Content = ({content}) => {
+
+  const handleDelete = (e) => {
+    e.preventDefault();
+    
+    fetch(`http://localhost:5000/content/${content._id}`, {
+      method: 'DELETE',
+    })
+    .then(res => res.json())
+    .then(result => {
+      console.log(result)
+    })
+
+  }
     return (
         <tr>
              <td>
@@ -24,10 +37,12 @@ const Content = ({content}) => {
                   </span>
                 </td>
                 <td className='w-[150px]'>
-                    <button className='bg-red-600 text-white  btn'>Delete</button>
+                    <button className='bg-red-700 text-white btn' onClick={(e) => handleDelete(e)}>
+                      Delete
+                    </button>
                 </td>
                 <th className='w-[150px]'>
-                   <button className='bg-green-600  text-white rounded-lg btn'>Update</button>
+                   <button className='bg-green-700  text-white rounded-lg btn'>Update</button>
                 </th>
        </tr>
     );

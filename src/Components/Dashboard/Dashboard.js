@@ -7,7 +7,7 @@ const Dashboard = () => {
           <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
           <div className="drawer-side">
              <label htmlFor="my-drawer-2" className="drawer-overlay"></label> 
-             <aside className='w-[250px] min-h-[500px] bg-black p-5 flex flex-col items-center space-y-5'>
+             <aside className='min-w-[250px] border-r-4 border-white min-h-[500px] bg-black p-5 flex flex-col items-center space-y-5'>
                <Link to='/dashboard' className='text-black hover:text-white bg-white hover:bg-black border-2 border-white w-[200px] text-center py-1 transition duration-500 text-xl uppercase font-bold '>
                    All Content
                  </Link>

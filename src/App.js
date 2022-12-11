@@ -1,6 +1,6 @@
 import { Provider } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
-import AddContent from './Components/Dashboard/AddContent';
+import AddContent from './Components/Dashboard/AddContent/AddContent';
 import AllContent from './Components/Dashboard/AllContent';
 import Dashboard from './Components/Dashboard/Dashboard';
 import Home from './Components/Home/Home';
