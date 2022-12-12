@@ -8,10 +8,10 @@ const AllContent = () => {
         fetch('http://localhost:5000/contents')
         .then(res => res.json())
         .then(contents => setContents(contents))
-    },[])
+    },[contents])
 
     return (
-    <div className="max-w-[1020px] overflow-x-auto">
+    <div className="min-w-[1020px] overflow-x-auto">
      <table className="table w-full">
       <thead className=" w-full">
        <tr>

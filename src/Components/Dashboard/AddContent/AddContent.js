@@ -16,7 +16,6 @@ const AddContent = () => {
         .then(result => {
             const img = result.data.url
             const content = {
-            "_id":8,
             "name":data.firstname + " " + data.lastname , 
             "img": img , 
             "details":{
@@ -24,8 +23,16 @@ const AddContent = () => {
               "info":data.info
               }
             }
-            console.log(content);
-        })
+            fetch('http://localhost:5000/content',{
+            method: 'POST',
+            body: JSON.stringify(content),
+            headers: {
+             'Content-type': 'application/json; charset=UTF-8',
+           },
+           })
+          .then((response) => response.json())
+          .then(result => console.log(result));
+         })
     };
 
     return (
