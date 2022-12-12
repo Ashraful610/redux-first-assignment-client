@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Content = ({content}) => {
+  const {img , firstName, lastName , details , email} = content;
   const navigate = useNavigate()
 
   const handleDelete = (e) => {
@@ -22,20 +23,20 @@ const Content = ({content}) => {
                 <div className="flex items-center space-x-3">
                     <div className="avatar">
                       <div className="mask rounded-full w-10 h-10">
-                        <img src={content.img} alt="Avatar Tailwind CSS Component" />
+                        <img src={img} alt="Avatar Tailwind CSS Component" />
                       </div>
                     </div>
                     <div>
-                      <div className="font-bold text-sm">{content.name}</div>
-                      <div className="text-sm opacity-50">{content.email}</div>
+                      <div className="font-bold text-sm">{firstName + ' ' + lastName}</div>
+                      <div className="text-sm opacity-50">{email}</div>
                     </div>
                 </div>
             </td>
             <td className='text-sm max-w-[500px] text-ellipsis overflow-hidden'>
-                  {content.details.title}
+                  {details.title}
                   <br/>
                 <span className="badge badge-ghost badge-sm text-ellipsis overflow-hidden">
-                    {content.details.info}
+                    {details.info}
                 </span>
             </td>
             <td className='w-[150px]'>

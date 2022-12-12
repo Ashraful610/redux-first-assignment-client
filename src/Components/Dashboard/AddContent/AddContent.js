@@ -16,7 +16,8 @@ const AddContent = () => {
         .then(result => {
             const img = result.data.url
             const content = {
-            "name":data.firstname + " " + data.lastname , 
+            "firstName":data.firstname ,
+            "lastName": data.lastname , 
             "email":data.email,
             "img": img , 
             "details":{
@@ -74,7 +75,9 @@ const AddContent = () => {
                    />
                 </div>
                 <div className='p-5'>
-                    <button className='text-black font-semibold px-10 py-2 bg-white '>Submit</button>
+                    <button type='submit' className='text-black font-semibold px-10 py-2 bg-white'>
+                        Submit
+                    </button>
                 </div>
             </form>
         </div>

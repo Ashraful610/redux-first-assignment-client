@@ -1,7 +1,8 @@
 [
     {
         "email":"ashraf@gmail.com",
-        "name":"Ashraful Alam",
+        "firstName":"Ashraful",
+        "lastName":"Alam",
         "img":"https://i.ibb.co/S70t1x4/background-img-2.jpg",
         "details":{
             "title":"Whoever is happy will make others happy too . - Anne Frank",
@@ -10,7 +11,8 @@
     },
     {
         "email":"sharuk@gmail.com",
-        "name": "Sharuk Khan",
+        "firstName":"Sharuk",
+        "lastName":"Khan",     
         "img":"https://i.ibb.co/kKLDT2k/uwp2198869.webp",
         "details":{
             "title":"The future belongs to those who believe in the beauty of their dreams . - Eleanor Roosevelt",
@@ -19,7 +21,8 @@
     },
     {
         "email":"slaman@gmail.com",
-        "name": "Salman Khan",
+        "firstName":"Salman",
+        "lastName":"Khan",    
         "img":"https://i.ibb.co/93wbn4n/Marmotamaps-Wallpaper-Inntal-Desktop-1920x1080.jpg",
         "details":{
             "title":"Life is either a daring adventure or nothing at all . - Helen Keller",
@@ -28,7 +31,8 @@
     },
     {
         "email":"mustafizur@gmail.com",
-        "name": "Mustafizur Rhman",
+        "firstName":"Mustafizur",
+        "lastName":"Rhman",
         "img":"https://i.ibb.co/Z6fmPyK/wallpapersden-com-street-4k-black-and-white-photography-1920x1080.jpg",
         "details":{
             "title":"If life were predictable it would cease to be life and be without flavor . - Eleanor Roosevelt",
@@ -37,7 +41,8 @@
     },
     {
         "email":"khalid@gmail.com",
-        "name":"Khalid Farhan",
+        "firstName":"Khalid",
+        "lastName":"Farhan",
         "img":"https://i.ibb.co/n7FCKkD/wallpapersden-com-76963-1920x1080.jpg",
         "details":{
             "title":"Life is a succession of lessons which must be lived to be understood . - Ralph Waldo Emerson",
@@ -46,7 +51,8 @@
     },
     {
         "email":"rejaul@gmail.com",
-        "name":"Rejaul Karim",
+        "firstName":"Rejaul",
+        "lastName":"Karim",      
         "img":"https://i.ibb.co/5jDJrGf/after-dark-68-1920x1080.jpg",
         "details":{
             "title":"You only live once, but if you do it right, once is enough . - Mae West" ,
@@ -55,7 +61,8 @@
     },
     {
         "email":"amir@gmail.com",
-        "name":"Amir Khan",
+        "firstName":"Amir",
+        "lastName":"Khan",   
         "img":"https://i.ibb.co/LYwHbQt/wallpaper.jpg",
         "details":{
             "title":"Life is really simple, but we insist on making it complicated . - Confucius",
