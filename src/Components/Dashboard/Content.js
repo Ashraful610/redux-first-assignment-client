@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Content = ({content}) => {
+  const navigate = useNavigate()
 
   const handleDelete = (e) => {
     e.preventDefault();
@@ -25,7 +27,7 @@ const Content = ({content}) => {
                     </div>
                     <div>
                       <div className="font-bold text-sm">{content.name}</div>
-                      <div className="text-sm opacity-50">United States</div>
+                      <div className="text-sm opacity-50">{content.email}</div>
                     </div>
                 </div>
             </td>
@@ -42,7 +44,7 @@ const Content = ({content}) => {
                 </button>
             </td>
             <th className='w-[150px]'>
-               <button className='bg-green-700  text-white rounded-lg btn'>Update</button>
+               <button className='bg-green-700  text-white rounded-lg btn' onClick={() => navigate(`/dashboard/UpdateContent/${content._id}`)}>Update</button>
             </th>
        </tr>
     );

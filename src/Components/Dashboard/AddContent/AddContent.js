@@ -17,6 +17,7 @@ const AddContent = () => {
             const img = result.data.url
             const content = {
             "name":data.firstname + " " + data.lastname , 
+            "email":data.email,
             "img": img , 
             "details":{
               "title":data.title ,

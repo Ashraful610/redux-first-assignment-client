@@ -1,6 +1,6 @@
 [
     {
-        
+        "email":"ashraf@gmail.com",
         "name":"Ashraful Alam",
         "img":"https://i.ibb.co/S70t1x4/background-img-2.jpg",
         "details":{
@@ -9,7 +9,7 @@
         }
     },
     {
-        
+        "email":"sharuk@gmail.com",
         "name": "Sharuk Khan",
         "img":"https://i.ibb.co/kKLDT2k/uwp2198869.webp",
         "details":{
@@ -18,7 +18,7 @@
         }
     },
     {
-        
+        "email":"slaman@gmail.com",
         "name": "Salman Khan",
         "img":"https://i.ibb.co/93wbn4n/Marmotamaps-Wallpaper-Inntal-Desktop-1920x1080.jpg",
         "details":{
@@ -27,7 +27,7 @@
         }
     },
     {
-        
+        "email":"mustafizur@gmail.com",
         "name": "Mustafizur Rhman",
         "img":"https://i.ibb.co/Z6fmPyK/wallpapersden-com-street-4k-black-and-white-photography-1920x1080.jpg",
         "details":{
@@ -36,7 +36,7 @@
         }
     },
     {
-        
+        "email":"khalid@gmail.com",
         "name":"Khalid Farhan",
         "img":"https://i.ibb.co/n7FCKkD/wallpapersden-com-76963-1920x1080.jpg",
         "details":{
@@ -45,7 +45,7 @@
         }
     },
     {
-        
+        "email":"rejaul@gmail.com",
         "name":"Rejaul Karim",
         "img":"https://i.ibb.co/5jDJrGf/after-dark-68-1920x1080.jpg",
         "details":{
@@ -54,7 +54,7 @@
         }
     },
     {
-        
+        "email":"amir@gmail.com",
         "name":"Amir Khan",
         "img":"https://i.ibb.co/LYwHbQt/wallpaper.jpg",
         "details":{

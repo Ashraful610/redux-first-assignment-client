@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import AddContent from './Components/Dashboard/AddContent/AddContent';
 import AllContent from './Components/Dashboard/AllContent';
 import Dashboard from './Components/Dashboard/Dashboard';
+import UpdateContent from './Components/Dashboard/UpdateContent';
 import Home from './Components/Home/Home';
 import Navbar from './Components/Navbar/Navbar';
 import store from './Components/redux/store';
@@ -16,6 +17,7 @@ function App() {
           <Route path='/dashboard' element={<Dashboard/>} >
               <Route index element={<AllContent/>} />
               <Route path='addContent' element={<AddContent/>} />
+              <Route path='UpdateContent/:id' element={<UpdateContent/>} />
           </Route>
         </Routes>
       </Provider>
