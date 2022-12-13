@@ -10,13 +10,13 @@ const Navbar = () => {
             </h2>
             <ul className='flex space-x-5'>
                 <li className=''>
-                    <Link to='/' className='text-black hover:text-white bg-white hover:bg-black border-2 border-white w-[200px] inline-block text-center  transition duration-500 text-xl font-bold uppercase'>
+                    <Link to='/' className='text-black hover:text-white bg-white hover:bg-black border-2 border-white w-[150px] inline-block text-center  transition duration-500 text-xl font-bold uppercase'>
                         Home
                     </Link>
                 </li>
                 <li>
-                    <Link to='/dashboard' className='text-black hover:text-white text-xl mx-2  bg-white hover:bg-black w-[200px] inline-block text-center  font-bold border-2 border-white transition duration-500 uppercase'>
-                        DashBoard
+                    <Link to='/dashboard' className='text-black hover:text-white text-xl mx-2  bg-white hover:bg-black w-[150px] inline-block text-center  font-bold border-2 border-white transition duration-500 uppercase'>
+                        Admin
                     </Link>
                 </li>
             </ul>
