@@ -1,11 +1,13 @@
+import { info } from 'daisyui/src/colors/colorNames';
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 const UpdateContent = () => {
     const {id} = useParams()
     const [content , setContent] = useState({})
     const {firstName , lastName , email ,  img , details } = content
+    const navigate = useNavigate();
     
     useEffect(() => {
         fetch(`http://localhost:5000/content/${id}`)
@@ -17,47 +19,75 @@ const UpdateContent = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
 
     const onSubmit = data => {
-        console.log(data);
-        const firstName = data.firstName
-        const lastName = data.lastName
-        const email = data.email
-        const title = data.title
-        const info= data.info
-        const img = data.photo
-        
+        const firstname = data.firstname
+        const lastname = data.lastname
+        const Email = data.email
+        const Title = data.title
+        const Info= data.info
+        const Img = data.photo[0]
 
-       
+        if(Img){
+            const formData = new FormData()
+            formData.append('image', Img)
+            const imgBBAPIKey = 'a35dd26dcd6217863e04026e8ac764ee'
+            const url = `https://api.imgbb.com/1/upload?expiration=600&key=${imgBBAPIKey}`
+            fetch(url , {method:'POST',body:formData})
+            .then(response => response.json())
+            .then(result => {
+                const img = result.data.url
+                const content = {
+                    "firstName":firstname ? firstname : firstName  ,
+                    "lastName": lastname ? lastname : lastName , 
+                    "email":Email ? Email : email ,
+                    "img":img , 
+                    "details":{
+                      "title":Title ? Title : details.title,
+                      "info":Info ? Info : details.info
+                      }
+                }
+                fetch(`http://localhost:5000/content/${id}`,{
+                method: 'PUT',
+                body: JSON.stringify(content),
+                headers: {
+                 'Content-type': 'application/json; charset=UTF-8',
+               },
+               })
+              .then((response) => response.json())
+              .then(result => {
+               if(result.modifiedCount > 0){
+                navigate('/dashboard')
+               }
+              });
+             })
+        }
+        else{
+            const content = {
+                "firstName":firstname ? firstname : firstName  ,
+                "lastName": lastname ? lastname : lastName , 
+                "email":Email ? Email : email ,
+                "img": Img ? Img : img , 
+                "details":{
+                  "title":Title ? Title : details.title,
+                  "info":Info ? Info : details.info
+                  }
+            }
+            fetch(`http://localhost:5000/content/${id}`,{
+                method: 'PUT',
+                body: JSON.stringify(content),
+                headers: {
+                 'Content-type': 'application/json; charset=UTF-8',
+               },
+               })
+              .then((response) => response.json())
+              .then(result => {
+                if(result.modifiedCount > 0){
+                 navigate('/dashboard')
+                }
+               });
+          }
 
-        // const img = data.photo[0]
-        // const formData = new FormData()
-        // formData.append('image', img)
-        // const imgBBAPIKey = 'a35dd26dcd6217863e04026e8ac764ee'
-        // const url = `https://api.imgbb.com/1/upload?expiration=600&key=${imgBBAPIKey}`
-        // fetch(url , {method:'POST',body:formData})
-        // .then(response => response.json())
-        // .then(result => {
-        //     const img = result.data.url
-        //     const content = {
-        //     "name":data.firstname + " " + data.lastname , 
-        //     "email":data.email,
-        //     "img": img , 
-        //     "details":{
-        //       "title":data.title ,
-        //       "info":data.info
-        //       }
-        //     }
-        //     fetch('http://localhost:5000/content',{
-        //     method: 'POST',
-        //     body: JSON.stringify(content),
-        //     headers: {
-        //      'Content-type': 'application/json; charset=UTF-8',
-        //    },
-        //    })
-        //   .then((response) => response.json())
-        //   .then(result => console.log(result));
-        //  })
-         
-    };
+        }
+
     return (
     <div className='bg-black w-[1020px] min-h-[550px]  flex justify-center items-center'>
         <form onSubmit={handleSubmit(onSubmit)} className='bg-white/20 w-3/4  min-h-fit rounded p-5'>

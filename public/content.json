@@ -1,72 +1,90 @@
 [
     {
-        "email":"ashraf@gmail.com",
-        "firstName":"Ashraful",
-        "lastName":"Alam",
-        "img":"https://i.ibb.co/S70t1x4/background-img-2.jpg",
-        "details":{
-            "title":"Whoever is happy will make others happy too . - Anne Frank",
-            "info":"Do not go where the path may lead, go instead where there is no path and leave a trail ."
+        "email": "sharuk@gmail.com",
+        "firstName": "Sharuk",
+        "lastName": "Khan",
+        "number":1,   
+       "img": "https://i.ibb.co/kKLDT2k/uwp2198869.webp",
+        "details": {
+            "title": "The future belongs to those who believe in the beauty of their dreams . - Eleanor Roosevelt",
+            "info": "The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart ."
         }
     },
     {
-        "email":"sharuk@gmail.com",
-        "firstName":"Sharuk",
-        "lastName":"Khan",     
-        "img":"https://i.ibb.co/kKLDT2k/uwp2198869.webp",
-        "details":{
-            "title":"The future belongs to those who believe in the beauty of their dreams . - Eleanor Roosevelt",
-            "info":"The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart ."
+        "email": "mustafizur@gmail.com",
+        "firstName": "Mustafizur",
+        "lastName": "Rhman",
+        "number":2,
+        "img": "https://i.ibb.co/Z6fmPyK/wallpapersden-com-street-4k-black-and-white-photography-1920x1080.jpg",
+        "details": {
+            "title": "If life were predictable it would cease to be life and be without flavor . - Eleanor Roosevelt",
+            "info": "You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose ."
         }
     },
     {
-        "email":"slaman@gmail.com",
-        "firstName":"Salman",
-        "lastName":"Khan",    
-        "img":"https://i.ibb.co/93wbn4n/Marmotamaps-Wallpaper-Inntal-Desktop-1920x1080.jpg",
-        "details":{
-            "title":"Life is either a daring adventure or nothing at all . - Helen Keller",
-            "info":"Many of life's failures are people who did not realize how close they were to success when they gave up ."
+        "email": "amir@gmail.com",
+        "firstName": "Amir",
+        "lastName": "Hossian",
+        "number":3,
+        "img": "https://i.ibb.co/k3ZNmL7/HiJEdQ.jpg",
+        "details": {
+            "title": "Life is really simple, but we insist on making it complicated . - Confucius",
+            "info": "Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma — which is living with the results of other people's thinking ."
         }
     },
     {
-        "email":"mustafizur@gmail.com",
-        "firstName":"Mustafizur",
-        "lastName":"Rhman",
-        "img":"https://i.ibb.co/Z6fmPyK/wallpapersden-com-street-4k-black-and-white-photography-1920x1080.jpg",
-        "details":{
-            "title":"If life were predictable it would cease to be life and be without flavor . - Eleanor Roosevelt",
-            "info":"You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose ."
+        "email": "slaman@gmail.com",
+        "firstName": "Salman",
+        "lastName": "Khan",
+        "number":4,        
+        "img": "https://i.ibb.co/93wbn4n/Marmotamaps-Wallpaper-Inntal-Desktop-1920x1080.jpg",
+        "details": {
+            "title": "Life is either a daring adventure or nothing at all . - Helen Keller",
+            "info": "Many of life's failures are people who did not realize how close they were to success when they gave up ."
         }
     },
     {
-        "email":"khalid@gmail.com",
-        "firstName":"Khalid",
-        "lastName":"Farhan",
-        "img":"https://i.ibb.co/n7FCKkD/wallpapersden-com-76963-1920x1080.jpg",
-        "details":{
-            "title":"Life is a succession of lessons which must be lived to be understood . - Ralph Waldo Emerson",
-            "info":"You will face many defeats in life, but never let yourself be defeated ."
+        "email": "khalid@gmail.com",
+        "firstName": "Khalid",
+        "lastName": "Farhan",
+        "number":5,
+        "img": "https://i.ibb.co/n7FCKkD/wallpapersden-com-76963-1920x1080.jpg",
+        "details": {
+            "title": "Life is a succession of lessons which must be lived to be understood . - Ralph Waldo Emerson",
+            "info": "You will face many defeats in life, but never let yourself be defeated ."
         }
     },
     {
-        "email":"rejaul@gmail.com",
-        "firstName":"Rejaul",
-        "lastName":"Karim",      
-        "img":"https://i.ibb.co/5jDJrGf/after-dark-68-1920x1080.jpg",
-        "details":{
-            "title":"You only live once, but if you do it right, once is enough . - Mae West" ,
-            "info":"Go confidently in the direction of your dreams! Live the life you've imagined ."
+        "email": "ashraf@gmail.com",
+        "firstName": "Ashraful",
+        "lastName": "Alam",
+        "number":6,      
+       "img": "https://i.ibb.co/S70t1x4/background-img-2.jpg",
+        "details": {
+            "title": "Whoever is happy will make others happy too . - Anne Frank",
+            "info": "Do not go where the path may lead, go instead where there is no path and leave a trail ."
         }
     },
     {
-        "email":"amir@gmail.com",
-        "firstName":"Amir",
-        "lastName":"Khan",   
-        "img":"https://i.ibb.co/LYwHbQt/wallpaper.jpg",
-        "details":{
-            "title":"Life is really simple, but we insist on making it complicated . - Confucius",
-            "info":"Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma — which is living with the results of other people's thinking ."
+        "email": "rejaul@gmail.com",
+        "firstName": "Rejaul",
+        "lastName": "Karim",
+        "number":7,
+        "img": "https://i.ibb.co/5jDJrGf/after-dark-68-1920x1080.jpg",
+        "details": {
+            "title": "You only live once, but if you do it right, once is enough . - Mae West",
+            "info": "Go confidently in the direction of your dreams! Live the life you've imagined ."
+        }
+    },
+    {
+        "firstName": "Mohammad",
+        "lastName": "Raj",
+        "number":8,   
+        "email": "raj@gmail.com",
+        "img": "https://i.ibb.co/kKR1GJH/salman-khan-1.jpg",
+        "details": {
+            "title": "this is my first comment",
+            "info": " The const keyword specifies that a variable or object"
         }
     }
 ]

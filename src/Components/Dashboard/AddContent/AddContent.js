@@ -1,9 +1,11 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
 import './AddContent.css'
 
 const AddContent = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
+    const navigate = useNavigate();
 
     const onSubmit = data => {
         const img = data.photo[0]
@@ -33,7 +35,11 @@ const AddContent = () => {
            },
            })
           .then((response) => response.json())
-          .then(result => console.log(result));
+          .then(result => {
+              if(result.insertedId ){
+                    navigate('/dashboard')
+              }
+           });
          })
     };
 
