@@ -21,7 +21,8 @@ const AddContent = () => {
             "firstName":data.firstname ,
             "lastName": data.lastname , 
             "email":data.email,
-            "img": img , 
+            "img": img ,
+            "number":9,
             "details":{
               "title":data.title ,
               "info":data.info
